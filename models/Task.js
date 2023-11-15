@@ -2,19 +2,19 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const taskSchema = new Schema({
-    instruction:{
+    instruction: {
       type: String,
       required: true
     },
-    assignee:{
+    assignee: {
       type: String,
       required: true
     }, 
-    complete:{
+    complete: {
       type: String,
       required: true
     }
-  },{
+  }, {
     versionKey: false
   }
 );

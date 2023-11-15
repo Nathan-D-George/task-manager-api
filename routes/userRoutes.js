@@ -6,9 +6,14 @@ router.route('/')
     .get(userController.getUsers)
     .post(userController.createUser)
     .put(userController.editUser)
-    delete(userController.deleteUser)
+    .delete(userController.deleteUser);
+
+router.route('/search')
+  .get(userController.searchUser);
 
 router.route('/:id')
-  .get(userController.getUser)
+  .get(userController.getUser);
+
+
 
 module.exports = router;

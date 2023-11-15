@@ -13,10 +13,6 @@ const userSchema = new Schema({
     password: {
       type: String,
       required: true
-    },
-    pasword_confirmation:{
-      type: String,
-      required: true
     }
   },{
     versionKey: false
