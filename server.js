@@ -4,7 +4,9 @@ const app     = express();
 const path    = require('path');
 const { logger }   = require('./middleware/logger');
 const errorHandler = require('./middleware/errorHandler');
+const cookieParser = require('cookie-parser');
 
+const verifyJWT  = require('./middleware/verifyJWT');
 const mongoose   = require('mongoose');
 const dbConnect  = require('./config/dbConnection');
 
@@ -14,6 +16,8 @@ dbConnect();
 
 app.use( logger );
 
+app.use(express.urlencoded({ extended: false }));
+
 app.use( express.json() );
 
 app.use('/', express.static(path.join(__dirname,'/public' )));
@@ -22,6 +26,7 @@ app.use('/',      require('./routes/rootRoutes' ));
 app.use('/about', require('./routes/aboutRoutes')); 
 app.use('/tasks', require('./routes/taskRoutes' ));
 app.use('/users', require('./routes/userRoutes' ));
+app.use('/auth',  require('./routes/authenticationRoutes' ));
 
 app.all('*', (req, res) => {
     res.status(404);

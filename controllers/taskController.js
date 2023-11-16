@@ -110,9 +110,8 @@ module.exports = {
 
 /*
  *  4 areas
- *   grace       - grace 
- *   prayer      - 
- *   servanthood - humility
- *   worship     - abandonment
- * 
+ *   grace       - grace (receive grace even after salvation)
+ *   prayer      - war   ( prayer, praise, petition, protection, proclaimation)
+ *   servanthood - humility 
+ *   worship     - abandonment (to God who is all powerful, all knowing, all present)
  */

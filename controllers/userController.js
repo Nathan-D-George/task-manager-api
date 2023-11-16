@@ -47,12 +47,12 @@ const createUser = async (req, res) => {
   }
   const userExistsAlready = await User.findOne({ username: req.body.username });
   if (userExistsAlready) {
-    return res.status(409).json({ 'CONFLICT': 'Username is already in use. Pcik another one.' });
+    return res.status(409).json({ 'CONFLICT': 'Username is already in use. Pick another one.' });
   }
   try {
     const user = await User.create({
       username: req.body.username,
-      email: req.body.email,
+      email:    req.body.email,
       password: req.body.password
     });
     res.status(200).json({ 'success': `user ${user.username} successfully created!` });

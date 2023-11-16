@@ -10,11 +10,19 @@ const userSchema = new Schema({
       type: String,
       required: true
     },
+    roles:{
+      User: {
+        type: Number,
+        default: 111
+      },
+      Editor: Number,
+      Admin: Number
+    },
     password: {
       type: String,
       required: true
-    }
-  },{
+    },
+  }, {
     versionKey: false
   }
 );
