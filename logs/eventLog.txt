@@ -121,3 +121,7 @@
 20231115	16:09:23	bf2dc4cb-d834-4c06-a569-9212546a735d	GET	undefined	/users/search/?name=use2
 20231115	16:10:03	2580e409-f37f-4d18-bcf4-16885db99f30	GET	undefined	/users/search/?name=use2
 20231115	16:11:33	2ae4d610-f9d4-4ed1-afa2-d7625fd2ac79	GET	undefined	/users/search/?username=use2
+20231116	08:05:16	8f8b97e1-f5c5-4c1d-b89e-ede808aa34f8	GET	undefined	/users/search/?username=use2
+20231116	08:05:22	f20e169b-9fef-4673-b7fe-b247b7447b88	GET	undefined	/users/search/?username=use
+20231116	08:05:30	7ab290d9-b8ca-4a85-92eb-b96a2e648b03	GET	undefined	/us
+20231116	08:05:52	55d2bbff-8860-45be-b394-2301353b53d7	POST	undefined	/users

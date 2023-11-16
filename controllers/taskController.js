@@ -113,6 +113,6 @@ module.exports = {
  *   grace       - grace 
  *   prayer      - 
  *   servanthood - humility
- *   worship     - 
+ *   worship     - abandonment
  * 
  */
